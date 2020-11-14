@@ -1,0 +1,35 @@
+<div *ngIf ="profile">
+    <div class= "panel-heading">
+        <h1>Github Search</h1>
+        {{ profile.name }}
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <img src="{{profile.avatar_url}}">
+        </div>
+        <div class="col-md-7">
+            <ul>
+                <li *ngIf ="profile.bio">{{ profile.bio }}</li>
+                <li *ngIf ="profile.blog">{{ profile.blog }}</li>
+            </ul>
+        </div>
+        <div class="col-md-5">
+            <span class="foll">Followings {{ profile.following }} </span>
+            <span class="foll-ers">Followers {{ profile.followers }} </span>
+            <span class="gists">Gists {{ profile.public_gists}} </span>
+            <span class="repos">Repositories {{ profile.public_repos }} </span>
+            <hr>
+            <h2>Repositories</h2>
+        <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-success btn-sm">See Repos</a></p> <br>
+        <div class="body" *ngFor ="let repo of repos">
+
+        <p class="col-md-5">
+            {{repo.name}} </p>
+        <p>{{repo.description}}</p>
+         <a href="{{repo.html_url}}" target="_blank" class="btn btn-success btn-sm">See this projects on github</a>
+        
+        </div>
+    </div> 
+    </div>
+</div>
+
