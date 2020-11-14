@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { GitSearchService } from './git-search.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfileComponent } from './profile/profile.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent
+    ProfileComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
