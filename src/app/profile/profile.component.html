@@ -1,12 +1,12 @@
 <form action="">
-    <div class="form-group">
-        <input type="text" class="form-control" placeholder="search for github users">
+    <div class= "form-group">
+        <input type="text" class="form-control" placeholder="Search for github users" [(ngModel)]="username" name="username"(keyup)="findProfile()">
     </div>
 </form>
 
 <div *ngIf ="profile">
     <div class= "panel-heading">
-        <h1>Github Search</h1>
+        <h1 class="git">Github Search</h1>
         {{ profile.name }}
     </div>
     <div class="row">
@@ -24,18 +24,18 @@
             <span class="foll-ers">Followers {{ profile.followers }} </span>
             <span class="gists">Gists {{ profile.public_gists}} </span>
             <span class="repos">Repositories {{ profile.public_repos }} </span>
-            <hr>
-            <h2>Repositories</h2>
+
+        <hr>
+            <h2 class="rep">Repositories</h2>
         <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-success btn-sm">See Repos</a></p> <br>
         <div class="body" *ngFor ="let repo of repos">
-
-        <p class="col-md-5">
-            {{repo.name}} </p>
+         
+        <a href="{{repo.html_url}}" target="_blank" class="btn btn-success btn-sm">See this projects on github</a>
+        <p class="name">{{repo.name}} </p>
         <p>{{repo.description}}</p>
-         <a href="{{repo.html_url}}" target="_blank" class="btn btn-success btn-sm">See this projects on github</a>
         
         </div>
+        </div>
     </div> 
-    </div>
 </div>
 

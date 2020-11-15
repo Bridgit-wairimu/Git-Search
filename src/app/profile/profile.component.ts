@@ -4,26 +4,32 @@ import { GitSearchService}  from '../git-search.service';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css']
+  styleUrls: ['./profile.component.css'],
 })
-export class ProfileComponent implements OnInit {
+export class  ProfileComponent implements OnInit {
   profile: object;
   repos: object;
+  username: string;
   // repos: any[];
 // profile: any [];
 
   constructor( private GitSearchService: GitSearchService) {
-    this.GitSearchService.getGithubRepos().subscribe(profile =>{
-      console.log(profile);
-      this.profile = profile;
-    });
-
-    this.GitSearchService.getProfileRepos().subscribe(repos =>{
-      console.log(repos);
-      this.repos = repos;
-    })
-
+    
    }
+
+findProfile(){
+  this.GitSearchService.checkProfile(this.username);
+  this.GitSearchService.getGithubRepos().subscribe(profile =>{
+    console.log(profile);
+    this.profile = profile;
+  });
+
+  this.GitSearchService.getProfileRepos().subscribe(repos =>{
+    console.log(repos);
+    this.repos = repos;
+  })
+
+}
 
   ngOnInit(){
   }

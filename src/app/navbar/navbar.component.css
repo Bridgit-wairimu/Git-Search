@@ -13,11 +13,14 @@ form{
 
 a{
     float: right;
-    background-color: blueviolet;
+    /* background-color: ; */
 }
 .container{
     float: right;
 }
 h2, .rep{
     text-align: center;
+}
+p{
+    color: white;
 }
