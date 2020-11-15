@@ -17,7 +17,7 @@ export class  ProfileComponent implements OnInit {
     
    }
 
-findProfile(){
+searchProfile(){
   this.GitSearchService.checkProfile(this.username);
   this.GitSearchService.getGithubRepos().subscribe(profile =>{
     console.log(profile);

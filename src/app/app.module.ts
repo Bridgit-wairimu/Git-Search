@@ -8,12 +8,16 @@ import { GitSearchService } from './git-search.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { DateCountPipe } from './date-count.pipe';
+import { DaysPipe } from './days.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    ProfileComponent
+    ProfileComponent,
+    DateCountPipe,
+    DaysPipe
 
     
   ],

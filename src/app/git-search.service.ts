@@ -1,5 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpClientModule}  from '@angular/common/http';
+import {environment} from '../environments/environment';  
+import { throwError} from 'rxjs';
+import { map ,catchError } from 'rxjs/operators';
+
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +24,7 @@ export class GitSearchService {
    }
 
    getProfileRepos(){
-    return this.http.get('https://api.github.com/users/' + this.username + '/repos?this.client_id' + this.clientid + '&client_secret' + this.clientsecret);
+    return this.http.get('https://api.github.com/users/' + this.username + '/repos?this.client_id' + this.clientid + '&client_secret' + this.clientsecret)
 
    }
    checkProfile(username: string){

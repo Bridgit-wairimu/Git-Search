@@ -1,6 +1,6 @@
 <form action="">
     <div class= "form-group">
-        <input type="text" class="form-control" placeholder="Search for github users" [(ngModel)]="username" name="username"(keyup)="findProfile()">
+        <input type="text" class="form-control" placeholder="Search for github users" [(ngModel)]="username" name="username" (keyup)="searchProfile()">
     </div>
 </form>
 
@@ -20,9 +20,9 @@
             </ul>
         </div>
         <div class="col-md-5">
+            <span class="gists">Gists {{ profile.public_gists}} </span>
             <span class="foll">Followings {{ profile.following }} </span>
             <span class="foll-ers">Followers {{ profile.followers }} </span>
-            <span class="gists">Gists {{ profile.public_gists}} </span>
             <span class="repos">Repositories {{ profile.public_repos }} </span>
             <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-success btn-sm"   class="repo">See Repos</a></p> <br>
 

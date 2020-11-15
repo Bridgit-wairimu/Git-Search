@@ -20,6 +20,9 @@ a{
 }
 h2, .rep{
     text-align: center;
+    font-family: 'Yesteryear', cursive, serif;
+    color: cornflowerblue;
+
 }
 .repo{
     float: left;
@@ -32,7 +35,7 @@ h2, .rep{
 .git2{
     float: right;
     width: 200px;
-    height: 40px;
+    height: 30px;
     border-radius: 20px;
     color: white;
     text-align: center;
@@ -40,7 +43,16 @@ h2, .rep{
 }
 .name{
     text-transform: uppercase;
+    color: cornflowerblue;
 }
 .description{
     text-align: center;
+    font-family: 'Architects Daughter', cursive;
+
+}
+h1, .git{
+    text-align: center;
+    font-family: 'Yesteryear', cursive, serif;
+    color: cornflowerblue;
+
 }
