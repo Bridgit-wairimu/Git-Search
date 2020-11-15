@@ -21,3 +21,21 @@ a{
 h2, .rep{
     text-align: center;
 }
+.repo{
+    float: left;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+}
+.git2{
+    float: left;
+    float: left;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    margin: 5px;
+}

@@ -24,13 +24,13 @@
             <span class="foll-ers">Followers {{ profile.followers }} </span>
             <span class="gists">Gists {{ profile.public_gists}} </span>
             <span class="repos">Repositories {{ profile.public_repos }} </span>
+            <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-success btn-sm"   class="repo">See Repos</a></p> <br>
 
         <hr>
             <h2 class="rep">Repositories</h2>
-        <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-success btn-sm">See Repos</a></p> <br>
         <div class="body" *ngFor ="let repo of repos">
-         
-        <a href="{{repo.html_url}}" target="_blank" class="btn btn-success btn-sm">See this projects on github</a>
+            <a href="{{repo.html_url}}" target="_blank" class="btn btn-success btn-sm" class="git2">See this projects on github</a>
+
         <p class="name">{{repo.name}} </p>
         <p>{{repo.description}}</p>
         
