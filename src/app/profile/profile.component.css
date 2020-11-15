@@ -30,12 +30,17 @@ h2, .rep{
     text-align: center;
 }
 .git2{
-    float: left;
-    float: left;
+    float: right;
     width: 200px;
     height: 40px;
     border-radius: 20px;
     color: white;
     text-align: center;
     margin: 5px;
+}
+.name{
+    text-transform: uppercase;
+}
+.description{
+    text-align: center;
 }
