@@ -6,12 +6,12 @@ import { GitSearchService}  from '../git-search.service';
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css'],
 })
+
 export class  SearchComponent implements OnInit {
   profile: object;
   repos: object;
   username: string;
   
-
   constructor( private GitSearchService: GitSearchService) {
     
    }
