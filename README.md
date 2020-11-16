@@ -42,6 +42,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # Technologies Used
  Angular CLI
+ 
+# Live link
+https://bridgit-wairimu.github.io/Git-Search/
 
 # Contact details
 For any,contributions, comments,suggestions,feedback or inquiries, contact me via email: kirikabridgit@gmail.com
