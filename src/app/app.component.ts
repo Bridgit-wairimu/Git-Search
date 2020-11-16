@@ -8,6 +8,7 @@ import {GitSearchService} from './git-search.service';
   styleUrls: ['./app.component.css'],
   providers: []
 })
+
 export class AppComponent implements OnInit{
   title = 'github-search';
 
@@ -15,6 +16,7 @@ export class AppComponent implements OnInit{
   constructor (private gitService : GitSearchService) {
     this.getRepositories();
   }
+  
   ngOnInit(): void {
   }
 
