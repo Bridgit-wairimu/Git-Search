@@ -9,16 +9,19 @@
         <h1 class="git">Github Search</h1>
         {{ profile.name }}
     </div>
+
     <div class="row">
         <div class="col-md-3">
             <img src="{{profile.avatar_url}}">
         </div>
+
         <div class="col-md-7">
             <ul>
                 <li *ngIf ="profile.bio">{{ profile.bio }}</li>
                 <li *ngIf ="profile.blog">{{ profile.blog }}</li>
             </ul>
         </div>
+
         <div class="col-md-5">
             <span class="gists">Gists {{ profile.public_gists}} </span>
             <span class="foll">Followings {{ profile.following }} </span>
@@ -27,6 +30,7 @@
             <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-success btn-sm"   class="repo">See Repos</a></p> <br>
 
         <hr>
+        
             <h2 class="rep">Repositories</h2>
         <div class="body" *ngFor ="let repo of repos">
             <a href="{{repo.html_url}}" target="_blank" class="btn btn-success btn-sm" class="git2">See this projects on github</a> 

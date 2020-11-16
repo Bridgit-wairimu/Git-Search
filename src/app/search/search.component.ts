@@ -10,8 +10,7 @@ export class  SearchComponent implements OnInit {
   profile: object;
   repos: object;
   username: string;
-  // repos: any[];
-// profile: any [];
+  
 
   constructor( private GitSearchService: GitSearchService) {
     
